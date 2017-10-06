@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+function patternL()
+{
+  var i, j,ans;
+  f=document.getElementById("FNumber").value;
+  l=document.getElementById("LNumber").value;
+  var a = document.getElementById("add");
+  if(a.checked)
+  {
+  var c=0;
+	c=parseInt(f)+parseInt(l);
+	document.getElementById("ad").innerHTML=c;
+		
+   }
+}
+</script>
+</head>
+<body>
+	<input type="number" id="FNumber"></input></br>
+	<input type="number" id="LNumber"></input></br>
+	<input type="checkbox" id="add"> add</br><span id="ad"></span>
+	<input type="checkbox" id="sub"> sub</br>
+	<button onclick="patternL()">submit</button>
+</body>
+</html>
